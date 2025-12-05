@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <tr>
+            <td>Lesson</td>
+            <td>Teacher</td>
+            <td>Date/time</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Thanasis</td>
+            <td>Monday 18:00-21:00</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Markos</td>
+            <td>Thursday 18:00-21:00</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th>Lesson</th>
+            <th>Teacher</th>
+            <th>Date/time</th>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Thanasis</td>
+            <td>Monday 18:00-21:00</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Lesson</th>
+                <th>Teacher</th>
+                <th>Date/time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Java</td>
+                <td>Thanasis</td>
+                <td>Monday 18:00-21:00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Lesson</th>
+                <th>Teacher</th>
+                <th>Date/time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">Learning Programming</td>
+                <!-- <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Thanasis</td>
+                <td>Monday</td>
+            </tr>
+            <tr>
+                <td>Web</td>
+                <td>Markos</td>
+                <td rowspan="2">Thursday</td>
+            </tr>
+            <tr>
+                <td>Sql</td>
+                <td>Makis</td>
+                <!-- <td>Thursday</td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    
+    <!-- table with 1 command: table>tr*3>td*4 -->
+    <!-- Επιλογή πολλαπλών σημείων:
+    1) alt + mouse click
+    2) ctrl + alt + arrows -->
+    <table>
+        <tr>
+            <td>Program HTML</td>
+            <td>Program HTML</td>
+            <td>Program HTML</td>
+            <td>Program HTML</td>
+        </tr>
+        <tr>
+            <td>Markos</td>
+            <td>Markos</td>
+            <td>Markos</td>
+            <td>Markos</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>HTML</td>
+            <td>HTML</td>
+            <td>HTML</td>
+        </tr>
+    </table>
+</body>
+</html>
